@@ -32,8 +32,10 @@ async function removeFavorite(id) {
     if (!res.ok) throw new Error("Network error");
     const updated = await res.json();
     console.log("Removed favorite:", updated);
+    window.location.reload(); // reload the page after removal
   } catch (err) {
     console.error("Failed to remove favorite:", err);
+    window.location.reload(); // reload the page after error
   }
 }
 
