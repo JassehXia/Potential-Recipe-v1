@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Favorites</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--Menu Buttons-->
+        <div id="menuButtons">
+            <button id = "loginButton">Login</button>
+            <button id="homeButton" onclick="window.location.href='index.html'">Home</button>
+            <button id="favoritesButton" onclick="location.reload()">Favorites</button>
+        </div>
+        
+        <!-- Top Flex Container -->
+        <div id="topContainer">
+            <h1 id="title">Favorites</h1>
+        </div>
+
+    
+
+        <!-- Bottom Flex Container -->
+         <div id="bottomContainer">
+            <div id="recipeTitleBox">
+            <h2 id="recipeTitle">Recipes</h2>
+            </div>
+            <div id="recipeBox">
+                <!--Recipes Should Appear Here-->
+                
+            </div>
+        </div>
+
+        <script src="favorites.js"></script>
+        <script src="mainPage.js"></script>
+    </body>

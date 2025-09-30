@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Potential Recipe</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--Menu Buttons-->
+        <div id="menuButtons">
+            <button id = "loginButton">Login</button>
+            <button id="homeButton" onclick="location.reload()">Home</button>
+            <button id="favoritesButton" onclick="window.location.href='favorites.html'">Favorites</button>
+        </div>
+        
+        <!-- Top Flex Container -->
+        <div id="topContainer">
+            <h1 id="title">Potential Recipe</h1>
+            <!-- Container for the input box -->
+            <div id="inputBox"> 
+                <select id="ingredientList">
+                    <option value="0">Select an ingredient</option>
+                    <optgroup label="Proteins">
+                        <option value="Chicken">Chicken</option>
+                        <option value="Beef">Beef</option>
+                        <option value="Pork">Pork</option>
+                        <option value="Lamb">Lamb</option>
+                        <option value="Turkey">Turkey</option>
+                        <option value="Fish">Fish</option>
+                        <option value="Shrimp">Shrimp</option>
+                        <option value="Tofu">Tofu</option>
+                        <option value="Eggs">Eggs</option>
+                    </optgroup>
+                    <optgroup label="Grains">
+                        <option value="Rice">Rice</option>
+                        <option value="Wheat">Wheat</option>
+                        <option value="Barley">Barley</option>
+                        <option value="Oats">Oats</option>
+                        <option value="Quinoa">Quinoa</option>
+                        <option value="Corn">Corn</option>
+                        <option value="Pasta">Pasta</option>
+                        <option value="Bread">Bread</option>
+                        <option value="Couscous">Couscous</option>
+
+                    </optgroup>
+                    <optgroup label="Vegetables">
+                        <option value="Carrot">Carrot</option>
+                        <option value="Broccoli">Broccoli</option>
+                        <option value="Spinach">Spinach</option>
+                        <option value="Potato">Potato</option>
+                        <option value="Tomato">Tomato</option>
+                        <option value="Onion">Onion</option>
+                        <option value="Garlic">Garlic</option>
+                        <option value="Bell Pepper">Bell Pepper</option>
+                        <option value="Cucumber">Cucumber</option>
+                        <option value="Lettuce">Lettuce</option>
+                        <option value="Mushroom">Mushroom</option>
+                        <option value="Zucchini">Zucchini</option>
+                        <option value="Cauliflower">Cauliflower</option>
+                        <option value="Celery">Celery</option>
+                        <option value="Cabbage">Cabbage</option>
+                        <option value="Asparagus">Asparagus</option>
+                        <option value="Peas">Peas</option>
+                        <option value="Corn">Corn</option>
+                        <option value="Kale">Kale</option>
+                        <option value="Brussels Sprouts">Brussels Sprouts</option>
+                        <option value="Sweet Potato">Sweet Potato</option>
+                        <option value="Eggplant">Eggplant</option>
+                        <option value="Radish">Radish</option>
+                        <option value="Pumpkin">Pumpkin</option>
+                        <option value="Artichoke">Artichoke</option>
+                    </optgroup>
+                    <optgroup label="Fruits">
+                        <option value="Apple">Apple</option>
+                        <option value="Banana">Banana</option>
+                        <option value="Orange">Orange</option>
+                        <option value="Grapes">Grapes</option>
+                        <option value="Strawberry">Strawberry</option>
+                        <option value="Blueberry">Blueberry</option>                        
+                        <option value="Raspberry">Raspberry</option>
+                        <option value="Pineapple">Pineapple</option>
+                        <option value="Mango">Mango</option>
+                        <option value="Peach">Peach</option>
+                        <option value="Pear">Pear</option>
+                        <option value="Watermelon">Watermelon</option>
+                        <option value="Kiwi">Kiwi</option>
+                        <option value="Cherry">Cherry</option>
+                        <option value="Pomegranate">Pomegranate</option>
+                        <option value="Coconut">Coconut</option>
+                        <option value="Lemon">Lemon</option>
+                        <option value="Lime">Lime</option>
+                        <option value="Apricot">Apricot</option>
+                        <option value="Fig">Fig</option>
+                    </optgroup>
+                </select>
+                <button id="searchButton">Submit</button>
+                <button id="resetButton">Reset</button>
+            </div>
+            <div id = 'ingredientsAddedBox'>
+                <p id="ingredientsAdded">Ingredients Will Appear Here</p>
+                <ul id="ingredientsList"></ul>
+            </div>
+        </div>
+
+        <!-- Bottom Flex Container -->
+        <div id="bottomContainer">
+            <div id="recipeTitleBox">
+            <h2 id="recipeTitle">Recipes</h2>
+            </div>
+            <div id="recipeBox">
+                <!--Recipes Should Appear Here-->
+                
+            </div>
+        </div>
+
+        <script src="mainPage.js"></script>
+    </body>
+</html>
