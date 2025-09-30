@@ -105,7 +105,7 @@ async function loadRecipesFromDB(numToShow = 5, append = false, excludeIds = [])
 // Favorite a recipe
 async function favoriteRecipe(id) {
   try {
-    const res = await fetch(`${BACKEND_URL}/api/recipes/${id}/favorite`, {
+    const res = await fetch(`/api/recipes/${id}/favorite`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" }
     });

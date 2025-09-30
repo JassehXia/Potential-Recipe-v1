@@ -14,7 +14,7 @@ recipeBox.addEventListener('wheel', (e) => {
 
 async function loadFavoritesFromDB() {
   try {
-    const response = await fetch(`${BACKEND_URL}api/recipes/getFavorites`);
+    const response = await fetch(`api/recipes/getFavorites`);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const dbRecipes = await response.json();
     dbRecipes.forEach(recipe => createRecipeCard(recipe));
@@ -25,7 +25,7 @@ async function loadFavoritesFromDB() {
 
 async function removeFavorite(id) {
   try {
-    const res = await fetch(`${BACKEND_URL}/api/recipes/${id}/unfavorite`, {
+    const res = await fetch(`/api/recipes/${id}/unfavorite`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" }
     });
