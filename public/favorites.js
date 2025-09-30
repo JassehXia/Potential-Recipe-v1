@@ -14,7 +14,7 @@ recipeBox.addEventListener('wheel', (e) => {
 
 async function loadFavoritesFromDB() {
   try {
-    const response = await fetch(`api/recipes/getFavorites`);
+    const response = await fetch(`/api/recipes/getFavorites`);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const dbRecipes = await response.json();
     dbRecipes.forEach(recipe => createRecipeCard(recipe));
