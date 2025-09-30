@@ -77,7 +77,7 @@ function createRecipeCard(recipe) {
 // Load recipes from MongoDB
 async function loadRecipesFromDB(numToShow = 5, append = false, excludeIds = []) {
   try {
-    const response = await fetch(`${BACKEND_URL}/api/recipes`);
+    const response = await fetch(`/api/recipes`);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const dbRecipes = await response.json();
 
